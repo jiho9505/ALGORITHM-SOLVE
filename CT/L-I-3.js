@@ -8,7 +8,7 @@
 
 const solution = () => {
 
-    const arr = [[1,3],[2,7],[6,8]];
+    const arr = [[0,1],[0,2],[6,3],[8,4]]
 
     /*
         [[1,3],[4,2],[5,3],[8,11],[25,25]] // 60
@@ -34,7 +34,7 @@ const solution = () => {
     while(i<arr.length || temp.length > 0){
 
         if(temp.length === 0 && i<arr.length  && std < arr[i][0]){
-            std = arr[i][0] + 5;
+            std = arr[i][0];
             i += 1;
         }
         for(let j = i; j < arr.length; j++){
